@@ -1,0 +1,11 @@
+CREATE TABLE USERS (
+    ID SERIAL PRIMARY KEY,       
+    NAME VARCHAR(100) NOT NULL,  
+    EMAIL VARCHAR(100) NOT NULL UNIQUE 
+
+CREATE TABLE PRODUCTS
+    ID SERIAL PRIMARY KEY,           -- Identificador único gerado automaticamente
+    NAME VARCHAR(100) NOT NULL,      -- Nome do produto, campo obrigatório
+    QUANT INT NOT NULL          -- Quantidade do produto, campo obrigatório
+);
+
