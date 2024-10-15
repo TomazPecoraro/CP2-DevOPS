@@ -11,8 +11,7 @@ var builder = WebApplication.CreateBuilder(new WebApplicationOptions
 
 builder.WebHost.ConfigureKestrel(serverOptions =>
 {
-    serverOptions.ListenAnyIP(5000); // Porta HTTP
-    serverOptions.ListenAnyIP(5001, listenOptions => listenOptions.UseHttps()); // Porta HTTPS
+    serverOptions.ListenAnyIP(8080);
 });
 
 IConfiguration configuration = builder.Configuration;
